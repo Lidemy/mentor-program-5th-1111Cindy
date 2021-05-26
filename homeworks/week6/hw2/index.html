@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>新拖延運動報名表單</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+
+  <style>
+
+  	.wrapper {
+  		width: 645px;
+  		height: 1085px;
+  		box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+  		margin: 121px  auto 66px;
+  		padding: 30px 35px 35px 42px;
+  		border-top: solid 8px #fad312;  		
+  	}
+
+  	h1 {
+  		font-size: 36px;
+  		padding-bottom: 20px;
+  	}
+
+  	.wrapper p {
+  		font-size: 14px;
+  	}
+
+  	.wrapper p:nth-child(4) {
+  		color: red;
+  	}
+
+  	.part {
+  		padding-top: 25px; 
+  		padding-bottom: 25px;
+  	}
+
+  	.question {
+  		font-size: 20px;
+  		padding-bottom: 15px;
+  	}
+
+  	.desc {
+  		font-size: 14px;
+  	}
+
+  	.check:after {
+  		content:" *";
+  		color: red;
+  	}
+
+  	.answer {
+  		color: #afafaf;
+  		font-size: 16px;
+  		width: 287px;
+  		height: 23px;
+  		border: solid 1px #d0d0d0;
+  		line-height: 23px;
+  		padding-left: 5px;
+
+  	}
+
+  	.radio {
+  		padding-bottom: 10px;
+  		font-size: 14px;
+  	}
+
+
+  	.submit {
+  		width: 92px;
+ 		height: 40px;
+ 		background: #fad312;
+ 		border-radius: 3px;
+ 		font-size: 15px;
+		text-align: center;
+		line-height: 40px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		border: none;
+		cursor:pointer;
+  	}
+
+  	.submit:hover {
+  		color: white;
+  	}
+
+  	footer {
+  		color: #999999;
+  		text-align: center;
+  		height: 60px;
+  		background: #000000;
+  		border-top: solid 3px #fad312;
+		line-height: 60px; 
+		position: relative;
+    	bottom: 0;
+    	width: 100%;		
+	}
+
+	@media(max-width: 768px) {
+		.wrapper {
+			width: 100%;
+			margin: 0 auto;
+			padding: 0 20px;
+	  		border-top: solid 8px #fad312;  
+		}
+
+	}
+
+
+  </style>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<h1>新拖延運動報名表單</h1>
+		<p>活動日期：2020/12/10 ~ 2020/12/11</p>
+		<p>活動地點：台北市大安區新生南路二段1號</p>
+		<p>*必填</p>
+
+		<div class="part">
+			<div class="question check">
+				暱稱
+			</div>
+			<input type="text" placeholder="您的回答" class="answer">
+		</div>
+
+		<div class="part">
+			<div class="question check">
+				電子郵件
+			</div>
+			<input type="text" placeholder="您的電子郵件" class="answer">
+		</div>
+
+		<div class="part">
+			<div class="question check">
+				手機號碼
+			</div>
+			<input type="text" placeholder="您的手機號碼" class="answer">
+		</div>
+
+		<div class="part">
+			<div class="question check">
+				報名類型
+			</div>
+			<div class="radio">
+				<input type="radio" id="躺在床上用想像力實作" name="type">
+				<label for="躺在床上用想像力實作">躺在床上用想像力實作</label>
+			</div>	
+			<div class="radio">
+				<input type="radio" id="趴在地上滑手機找現成的" name="type">
+				<label for="趴在地上滑手機找現成的">趴在地上滑手機找現成的</label>
+			</div>
+		</div>
+
+		<div class="part">
+			<div class="question check">
+				怎麼知道這個活動的？
+			</div>
+			<input type="text" placeholder="您的回答" class="answer">
+		</div>
+
+		<div class="part">
+			<div class="question">
+				其他
+			</div>
+			<div class="question desc">對活動的一些建議</div>
+			<input type="text" placeholder="您的回答" class="answer">
+		</div>
+
+		<input type="submit" class="submit"> 
+		<div class="question desc">請勿透過表單送出您的密碼。</div>
+
+	</div>
+
+	<footer>
+		© 2020 © Copyright. All rights Reserved.<hr>
+	</footer>
+
+</body>
+</html>
